@@ -30,14 +30,13 @@ class ParentBasicFragment : Fragment() {
     }
 
 
-
     private fun addFragment() {
         val tabLayout2 = binding.tabLayoutParentBasicId
         val viewPager2 = binding.viewPagerParentBasicId
 
         val adapter = ViewPagerAdapter(childFragmentManager, lifecycle)
-        adapter.addFragment(ChildBasic01Fragment(), "Child 1")
-        adapter.addFragment(ChildBasic02Fragment(), "Child 2")
+        adapter.addFragment(ChildBasic01Fragment(), "Length")
+        adapter.addFragment(ChildBasic02Fragment(), "Area")
         viewPager2.adapter = adapter
 
         TabLayoutMediator(tabLayout2, viewPager2) { tab, position ->

@@ -19,11 +19,12 @@
             android:orientation="horizontal">
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutParentBasicId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tabLayoutParentBasicId"
-            android:background="@color/light_grey"
-            app:tabIndicatorColor="@color/white"/>
+            android:background="?attr/colorOnSurfaceVariant"
+            app:tabTextColor="?attr/colorOnSurfaceInverse"
+            app:tabIndicatorColor="?attr/colorSurfaceInverse"/>
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
