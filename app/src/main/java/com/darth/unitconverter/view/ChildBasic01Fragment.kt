@@ -1,6 +1,3 @@
-package com.darth.unitconverter.view
-
-import android.R
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,8 +7,10 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.core.widget.doAfterTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.darth.unitconverter.R
 import com.darth.unitconverter.adapter.ConversionLengthAdapter
 import com.darth.unitconverter.databinding.FragmentChildBasic01Binding
+import com.darth.unitconverter.model.ConversionData
 
 class ChildBasic01Fragment : Fragment() {
 
@@ -44,7 +43,7 @@ class ChildBasic01Fragment : Fragment() {
     private var _binding: FragmentChildBasic01Binding? = null
     private val binding get() = _binding!!
 
-    private val conversionList = ArrayList<String>()
+    private val conversionList = ArrayList<ConversionData>()
     private lateinit var conversionAdapter: ConversionLengthAdapter
 
     override fun onCreateView(
@@ -64,8 +63,8 @@ class ChildBasic01Fragment : Fragment() {
         binding.conversionListRecycler.layoutManager = LinearLayoutManager(requireContext())
 
         val unitSpinner = binding.unitSpinner
-        val adapter = ArrayAdapter(requireContext(), R.layout.simple_spinner_item, lengthUnits)
-        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, lengthUnits)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         unitSpinner.adapter = adapter
         unitSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
@@ -97,13 +96,13 @@ class ChildBasic01Fragment : Fragment() {
 
             lengthUnits.forEach { unit ->
                 val result = convertLength(inputValue, selectedUnit, unit)
-                conversionList.add("$formattedInputValue $selectedUnit = $result $unit")
+                val conversionData = ConversionData(result, unit)
+                conversionList.add(conversionData)
             }
 
             conversionAdapter.notifyDataSetChanged()
         }
     }
-
 
     private fun convertLength(value: Double, fromUnit: String, toUnit: String): String {
         val fromFactor = conversionFactors[fromUnit]
@@ -113,12 +112,14 @@ class ChildBasic01Fragment : Fragment() {
             val meterValue = value * fromFactor
             val result = meterValue / toFactor
 
-            return result.toString()
+            // Format the result with two decimal places
+            val formattedResult = String.format("%.2f", result)
+
+            return formattedResult
         }
 
         return "0" // or handle the case when conversion factors are not available
     }
-
 
 
     override fun onDestroyView() {
