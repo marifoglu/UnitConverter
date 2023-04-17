@@ -27,7 +27,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="US" />
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/us"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textUkLabel"
@@ -36,7 +39,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="UK" />
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/uk"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textEuLabel"
@@ -45,7 +51,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="EU" />
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/eu"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textInchLabel"
@@ -54,7 +63,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Inch" />
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/inch"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textMmLabel"
@@ -63,7 +75,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="mm" />
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/mm"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -73,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="55dp"
         android:padding="8dp" />
 
 </FrameLayout>

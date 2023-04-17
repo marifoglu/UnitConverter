@@ -6,6 +6,11 @@
     <string name="select_unit">Select unit</string>
     <string name="convert">Convert</string>
     <string name="enter_value">Enter value</string>
+    <string name="inch">Inch</string>
+    <string name="eu">EU</string>
+    <string name="uk">UK</string>
+    <string name="us">US</string>
+    <string name="mm">mm</string>
 
     <string-array name="length_units">
         <item>Kilometer</item>
