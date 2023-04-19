@@ -20,4 +20,11 @@
         <item>Light Year</item>
     </string-array>
 
+    <string-array name="weight_units">
+        <item>Kilogram</item>
+        <item>Gram</item>
+        <item>Milligram</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+    </string-array>
 </resources>
