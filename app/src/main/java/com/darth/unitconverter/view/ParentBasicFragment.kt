@@ -37,7 +37,7 @@ class ParentBasicFragment : Fragment() {
 
         val adapter = ViewPagerAdapter(childFragmentManager, lifecycle)
         adapter.addFragment(ChildBasic01Fragment(), "Length")
-        adapter.addFragment(ChildBasic02Fragment(), "Area")
+        adapter.addFragment(ChildBasic02Fragment(), "Weight")
         viewPager2.adapter = adapter
 
         TabLayoutMediator(tabLayout2, viewPager2) { tab, position ->
