@@ -11,6 +11,8 @@
     <string name="uk">UK</string>
     <string name="us">US</string>
     <string name="mm">mm</string>
+    <string name="science_fragment">Science Fragment</string>
+    <string name="misc_fragment">Misc Fragment</string>
 
     <string-array name="length_units">
         <item>Kilometer</item>
