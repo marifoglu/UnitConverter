@@ -22,7 +22,7 @@
             android:layout_weight="1"
             app:hintTextColor="?attr/colorPrimary"
             android:color="?attr/colorOnPrimaryContainer"
-            android:hint="@string/enter_value">
+            android:hint="Enter length value">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/conversionItemText"

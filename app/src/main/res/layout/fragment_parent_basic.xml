@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorOnSurfaceVariant"
             app:tabTextColor="?attr/colorOnSurfaceInverse"
-            app:tabIndicatorColor="?attr/colorSurfaceInverse"/>
+            app:tabIndicatorColor="?attr/colorOnSurfaceInverse"/>
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
