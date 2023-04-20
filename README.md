@@ -13,6 +13,28 @@
 
 <h2>Screenshots</h2>
 
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot1.png" alt="Screenshot 1" />
+    </td>
+    <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot2.png" alt="Screenshot 2" />
+    </td>
+    <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot3png" alt="Screenshot 3" />
+    </td>
+    <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot4.png" alt="Screenshot 4" />
+    </td>
+        <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot5.png" alt="Screenshot 5" />
+    </td>
+    <td>
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot6.png" alt="Screenshot 6" />
+    </td>
+  </tr>
+</table>
 
 
 <p>Include some screenshots of the app to showcase its interface and features. You can add them directly to the README file or provide a link to a separate folder or image hosting service.</p>
