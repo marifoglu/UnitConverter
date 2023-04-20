@@ -22,7 +22,7 @@
       <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot2.png" alt="Screenshot 2" />
     </td>
     <td>
-      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot3png" alt="Screenshot 3" />
+      <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot3.png" alt="Screenshot 3" />
     </td>
     <td>
       <img src="https://github.com/marifoglu/UnitConverter/blob/main/screenshots/Screenshot4.png" alt="Screenshot 4" />
