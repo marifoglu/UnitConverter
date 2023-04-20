@@ -33,8 +33,6 @@ class ParentLivingFragment : Fragment() {
 
         val adapter = ViewPagerAdapter(childFragmentManager, lifecycle)
         adapter.addFragment(ChildLiving01Fragment(), "Man Shoes")
-        adapter.addFragment(ChildBasic01Fragment(), "Length")
-        adapter.addFragment(ChildBasic02Fragment(), "Weight")
         viewPager2.adapter = adapter
 
         TabLayoutMediator(tabLayout2, viewPager2) { tab, position ->
